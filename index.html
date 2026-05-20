@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動画ダウンロードセンター</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #86868b;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .video-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .video-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: #f9f9fb;
+            border: 1px solid #d2d2d7;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        .video-item:hover {
+            border-color: #0071e3;
+            background: #f2f7fd;
+        }
+        .video-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .video-title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .video-meta {
+            font-size: 12px;
+            color: #86868b;
+        }
+        .download-btn {
+            background-color: #0071e3;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            white-space: nowrap;
+        }
+        .download-btn:hover {
+            background-color: #0077ed;
+        }
+        /* 作成中の動画用スタイル */
+        .coming-soon {
+            background: #f5f5f7;
+            border: 1px dashed #d2d2d7;
+        }
+        .coming-soon:hover {
+            background: #f5f5f7;
+            border-color: #d2d2d7;
+        }
+        .disabled-btn {
+            background-color: #aeaeaf;
+            color: #ffffff;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>2026年5月17日大人の発表会</h1>
+    <p class="description">必要な動画の「ダウンロード」ボタンをクリックしてください。<br>※容量が大きいため、Wi-Fi環境での接続を推奨します。</p>
+    
+    <div class="video-list">
+        <!-- 動画 1 -->
+        <div class="video-item">
+            <div class="video-info">
+                <div class="video-title">プログラム2番 クラリネット独奏.mp4</div>
+                <div class="video-meta">MP4形式 / 58.6MB</div>
+            </div>
+            <a href="video1.mp4" download="プログラム2番 クラリネット独奏.mp4" class="download-btn">ダウンロード</a>
+        </div>
+
+        <!-- 動画 2 -->
+        <div class="video-item">
+            <div class="video-info">
+                <div class="video-title">プログラム3番 ピアノ独奏</div>
+                <div class="video-meta">MP4形式 / 26.1MB</div>
+            </div>
+            <a href="video2.mp4" download="プログラム3番 ピアノ独奏.mp4" class="download-btn">ダウンロード</a>
+        </div>
+
+        <!-- 動画 3 -->
+        <div class="video-item">
+            <div class="video-info">
+                <div class="video-title">プログラム4番 クラリネット独奏.mp4</div>
+                <div class="video-meta">MP4形式 / 76.4MB</div>
+            </div>
+            <a href="video3.mp4" download="プログラム4番 クラリネット独奏.mp4" class="download-btn">ダウンロード</a>
+        </div>
+
+        <!-- 動画 4 -->
+        <div class="video-item">
+            <div class="video-info">
+                <div class="video-title">プログラム5番 トランペット独奏.mp4</div>
+                <div class="video-meta">MP4形式 / 29.5MB</div>
+            </div>
+            <a href="video4.mp4" download="プログラム5番 トランペット独奏.mp4" class="download-btn">ダウンロード</a>
+        </div>
+
+        <!-- 動画 5 -->
+        <div class="video-item">
+            <div class="video-info">
+                <div class="video-title">プログラム6番 ヴィオラ四重奏.mp4</div>
+                <div class="video-meta">MP4形式 / 107MB</div>
+            </div>
+            <a href="video5.mp4" download="プログラム6番 ヴィオラ四重奏.mp4" class="download-btn">ダウンロード</a>
+        </div>
+
+        <!-- 動画 6 -->
+        <div class="video-item">
+            <div class="video-info">
+                <div class="video-title">プログラム7番 女性合唱.mp4</div>
+                <div class="video-meta">MP4形式 / 約120MB</div>
+            </div>
+            <a href="video6.mp4" download="プログラム7番 女性合唱.mp4" class="download-btn">ダウンロード</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
